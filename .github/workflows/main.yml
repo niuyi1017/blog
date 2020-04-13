@@ -23,12 +23,13 @@ jobs:
     - uses: actions/checkout@v2
 
     # Runs a single command using the runners shell
-    - name: init hexo
-      run: sudo npm install hexo-cli -g
+    - name: init hexo & build
+      run: | 
+        sudo npm install hexo-cli -g
+        hexo generate 
 
     # Runs a set of commands using the runners shell
-    - name: build 
-      run: hexo generate 
+   
     # deploy
    
     - uses: manyuanrong/setup-ossutil@v1.0
