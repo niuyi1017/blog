@@ -27,10 +27,10 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: build blog
-    run: |
-      npm install
-      npm install -g hexo-cli
-      hexo generate
+      run: |
+        npm install
+        npm install -g hexo-cli
+        hexo generate
 
     # Runs a set of commands using the runners shell
     - name: deploy alioss
