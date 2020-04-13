@@ -28,9 +28,7 @@ jobs:
 
     # Runs a set of commands using the runners shell
     - name: build 
-      run: |
-        npm install ,
-        hexo generate .
+      run: hexo generate 
     # deploy
    
     - uses: manyuanrong/setup-ossutil@v1.0
