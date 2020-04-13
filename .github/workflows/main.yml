@@ -32,7 +32,7 @@ jobs:
         npm install ,
         hexo generate.
     # deploy
-    - name: deploy
+   
     - uses: manyuanrong/setup-ossutil@v1.0
       with:
         # endpoint 可以去oss控制台上查看
