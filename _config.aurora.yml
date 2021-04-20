@@ -61,7 +61,13 @@ theme:
 #! @docs https://aurora.tridiamond.tech/guide/social.html
 #! ---------------------------------------------------------------
 socials:
-
+  github: 'https://github.com/niuyi1017'
+  twitter: 'https://twitter.com/JackNiu1017'
+  # stackoverflow: ''
+  weibo: 'https://weibo.com/u/2396913833'
+  zhihu: 'https://zhihu.com/people/niu-xin-yu-51'
+  # csdn: 'https://blog.csdn.net/TriDiamond6'
+  # juejin: 'https://juejin.cn/user/1873223546578589'
 custom_socials:
   ##! Example:
   ##! --- Using SVG
@@ -96,13 +102,13 @@ site_meta:
 gitalk:
   enable: true
   autoExpand: true
-  clientID: ''
-  clientSecret: ''
-  repo: 'dev-blog-comments'
-  owner: 'TriDiamond'
-  admin: ['TriDiamond']
+  clientID: '7f7ce31516ded730be17'
+  clientSecret: 'a0f2e1ffbae52ec234dcc552a253475596d8bf1c'
+  repo: 'blog'
+  owner: 'niuyi1017'
+  admin: ['niuyi1017']
   id: uid
-  language: en
+  language: cn
   distractionFreeMode: true
   recentComment: true
   proxy: ''
@@ -140,8 +146,8 @@ copy_protection:
 
 # Enable Aurora Bot Dia
 aurora_bot:
-  enable: false
-  locale: en
+  enable: true
+  locale: cn
   bot_type: dia
   tips:
 
