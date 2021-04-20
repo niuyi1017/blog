@@ -10,8 +10,8 @@
 #! ---------------------------------------------------------------
 site:
   subtitle: niuyi's Blog
-  author: 小牛
-  nick: 小牛同学
+  author: 小牛同学
+  nick: 凡是过往，皆为序章
   description: 精通JavaScript......的拼写 
   language: cn
   multi_language: true
