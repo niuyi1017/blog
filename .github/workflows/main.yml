@@ -29,6 +29,7 @@ jobs:
         npm install
         ls
         rm -rf public
+        hexo clean
         npm run build
         cd public
         ls
