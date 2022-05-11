@@ -6,7 +6,7 @@ tags:
   - text
 photos: https://www.wangbase.com/blogimg/asset/201904/bg2019042609.jpg
 ---
-收集与阮一峰老师周刊的一些关于计算机视觉的例子   
+收集于阮一峰老师周刊的一些关于计算机视觉的例子   
 <!--more-->  
 ### 1、[提高《星际迷航》的分辨率](https://captrobau.blogspot.com/2019/03/remastering-star-trek-deep-space-nine.html)（英文）  
    ![](https://www.wangbase.com/blogimg/asset/201904/bg2019042609.jpg)  
