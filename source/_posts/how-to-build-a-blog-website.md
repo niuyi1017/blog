@@ -25,9 +25,8 @@ tags: blog
   [官网](https://hexo.io/zh-cn/)
 
   ### 3、Git
-  一个代码管理工具，可以拉取别人的代码，也可以分享自己代码，团队协作等  
+  一个代码管理工具，可以拉取别人的代码，分享自己代码，团队协作写代码等  
   [百度百科](https://baike.baidu.com/item/GIT/12647237?fr=aladdin)、[官网](https://git-scm.com/)
-  hexo、node、git
 ## 三、装环境
 ### 安装node 、下一步下一步
 ```
