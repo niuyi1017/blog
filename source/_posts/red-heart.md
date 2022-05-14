@@ -1,7 +1,7 @@
 ---
 title: 4分钟50行代码实现一颗跳动的爱心
 date: 2022-05-14 21:39:50
-photos: [[https://i0.hdslb.com/bfs/archive/85314043d73af49e15d3b281008edca7e10d6702.jpg@640w_400h]]
+photos: [[https://niuyi-blog.oss-cn-hangzhou.aliyuncs.com/post-imgs/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20220514175859.png]]
 tags: Bilibili
 ---
 520要到了，花式表白一下？
