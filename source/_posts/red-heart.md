@@ -26,7 +26,7 @@ tags: Bilibili
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Red Herat</title>
+  <title>Red Heart</title>
   <style>
     body{
       display: flex;
@@ -66,8 +66,6 @@ tags: Bilibili
       <div class="part left"></div>
       <div class="part right"></div>
     </div>
-      
-    
 </body>
 </html>
 ```
