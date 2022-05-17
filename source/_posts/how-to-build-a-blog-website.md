@@ -17,33 +17,59 @@ tags: blog
 ## 二、了解相关技术栈
   ### 1、Node.js 
    
-  一个JavaScript运行环境，可以在操作系统上运行JavaScript代码（在Node.js之前只能在浏览器里运行JavaScript代码）      
+  一个JavaScript运行环境，可以在操作系统上运行JavaScript代码  
   [百度百科](https://baike.baidu.com/item/node.js/7567977?fr=aladdin)、[官网](http://nodejs.cn/)
  
   ### 2、Hexo
-  一个基于Node.js的环境的博客框架(底层的脏活累活它来做，我们专注写博客)  
+  一个基于Node.js的环境的博客框架    
   [官网](https://hexo.io/zh-cn/)
 
   ### 3、Git
   一个代码管理工具，可以拉取别人的代码，分享自己代码，团队协作写代码等  
   [百度百科](https://baike.baidu.com/item/GIT/12647237?fr=aladdin)、[官网](https://git-scm.com/)
 ## 三、装环境
-### 安装node 、下一步下一步
+### 1、安装node
+  [官网下载](http://nodejs.cn/download/)对应系统的node安装包，安装时直接双击运行，然后下一步下一步   
+  安装后打开命令行工具，依次执行下面的命令，如果能打印出对应的版本号，就证明安装成功了 
 ```
 node -v
 npm -v
 ```
-### 安装hexo博客框架
+
+### 2、安装hexo博客框架  
+  在命令行执行:
 ```
  npm install -g hexo-cli
 ```
-### 安装git
-### 启动hexo
+
+然后执行:  
+
 ```
-  hexo init <folder>
-  cd <folder>
-  npm install
-  npm run server
+ hexo version
+```
+ 
+  如果能打印出对应的版本号，就证明安装成功了
+
+
+### 3、安装git
+[官网下载](https://git-scm.com/)对应安装包，安装时直接双击运行，然后下一步下一步   
+  安装后打开命令行工具，执行下面的命令，如果能打印出对应的版本号，就证明安装成功了
+```
+  git --version
+```
+
+### 4、启动hexo
+基础环境装好后，就可以启动hexo服务了  
+执行下面四行命令，然后在浏览器打开`http://localhost:4000`, 就可以看到hexo默认的博客站了
+```bash
+  # 用hexo初始化一个文件夹，用来做完hexo项目
+  hexo init <folder>  
+  # 进入到这个文件夹 
+  cd <folder>  
+  # 安装依赖       
+  npm install   
+  # 启动服务      
+  npm run server      
 ```
 ## 四、第一篇博客
 ## 五、选主题、配置美化博客
