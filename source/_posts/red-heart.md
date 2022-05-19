@@ -18,7 +18,7 @@ tags: Bilibili
 
  
 ### 源码
-
+#### 1、普通版
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -68,4 +68,73 @@ tags: Bilibili
     </div>
 </body>
 </html>
+```
+#### 2.动态计算日期版
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red Heart</title>
+  <style>
+    body{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+    .box{
+      height: 600px;
+      width: 600px;
+      animation: beat 1s infinite alternate;
+    }
+    .part{
+      height: 400px;
+      width: 600px;
+      background: red;
+      border-radius: 200px 0 0 200px ;
+      box-shadow: 0 0 200px red;
+    }
+    .left{
+      transform: translate(0,200px);
+    }
+    .right{
+      transform: rotate(90deg) translate(-300px, -100px);
+    }
+    h1{
+      color: pink;
+      font-size: 64px;
+    }
+    @keyframes beat {
+      from {
+        transform: rotate(45deg) scale(.8);
+      }
+      to{
+        transform: rotate(45deg) scale(1);
+      }
+    }
+  </style>
+</head>
+<body>
+    <div class="box">
+      <div class="part left"></div>
+      <div class="part right"></div>
+    </div>
+    <h1>我们已经相恋<span id="days"></span>天了</h1>
+    <script>
+      window.onload = () => {
+        const firstDay = new Date('2017-05-20').getTime()
+        const now = new Date().getTime()
+        const days = (now - firstDay) / (1000 * 60 * 60 * 24)
+        document.querySelector('#days').innerHTML = Math.floor(days)
+      } 
+    </script>
+</body>
+</html>
+
 ```
