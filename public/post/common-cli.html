@@ -79,14 +79,19 @@
       
       <p>收集整理前端常用的命令，涉及git、nginx、node、docker、linux等  </p>
 <span id="more"></span>  
-<h2 id="git-篇"><a href="#git-篇" class="headerlink" title="git 篇"></a>git 篇</h2><p>1、修改 <code>.gitignore</code> 文件后使其生效</p>
+<h2 id="一、-git-篇"><a href="#一、-git-篇" class="headerlink" title="一、 git 篇"></a>一、 git 篇</h2><p>1、修改 <code>.gitignore</code> 文件后使其生效</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> <span class="token function">rm</span> -r --cached <span class="token builtin class-name">.</span>
 <span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
 <span class="token function">git</span> commit -m <span class="token string">"update .gitignore"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p>2、查看git用户名信息 (设置用户信息后面跟<code>用户信息</code>；查看/更改全局用户信息加 <code>--global</code>)</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> config user.name
 <span class="token function">git</span> config user.email<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h2 id="node-篇"><a href="#node-篇" class="headerlink" title="node 篇"></a>node 篇</h2><p>1、清除 <code>node_modules</code> 缓存</p>
+<p>3、查看git远端地址</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> remote -v<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>4、更换git远端地址</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> remote set-url origin https://xxxx.git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h2 id="二、-Node-篇"><a href="#二、-Node-篇" class="headerlink" title="二、 Node 篇"></a>二、 Node 篇</h2><p>1、清除 <code>node_modules</code> 缓存</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># npm version &lt; 7.0.0</span>
 $ <span class="token function">npm</span> cache clean -f<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>2、查看<code>pm2</code>进程 </p>
@@ -95,10 +100,28 @@ $ <span class="token function">npm</span> cache clean -f<span aria-hidden="true"
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">pm2 show <span class="token function">id</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>4、查看<code>pm2</code>监控 </p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">pm2 monit<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>5、使用<code>pm2</code>启动 xxx 的任务</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">pm2 start src/app.js --name xxx<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h2 id="三、Linux-篇"><a href="#三、Linux-篇" class="headerlink" title="三、Linux 篇"></a>三、Linux 篇</h2><p>1、查看端口占用</p>
+<pre class="line-numbers language-none"><code class="language-none">netstat -tnlp | grep 80<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>2、查看进程详情</p>
+<pre class="line-numbers language-none"><code class="language-none">ps -aux | grep nginx<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>3、查看进程详情</p>
+<pre class="line-numbers language-none"><code class="language-none">ps -aux | grep nginx<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>3、查看服务状态详情</p>
+<pre class="line-numbers language-none"><code class="language-none">service xxx status
+或
+systemctl status xxx<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="四、Nginx-篇"><a href="#四、Nginx-篇" class="headerlink" title="四、Nginx 篇"></a>四、Nginx 篇</h3><p>1、nginx 检查语法是否正确</p>
+<pre class="line-numbers language-none"><code class="language-none">sudo nginx -t<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>2、nginx 重载配置文件以生效</p>
+<pre class="line-numbers language-none"><code class="language-none">sudo nginx -s reload<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.niuy.xyz/post/common-cli.html" data-id="cl38dkqrt0003nwvn5llwczpr" class="article-share-link">
+      <a data-url="http://blog.niuy.xyz/post/common-cli.html" data-id="cl9hxvoj30001v0vn2fp6hs7h" class="article-share-link">
         Share
       </a>
       
