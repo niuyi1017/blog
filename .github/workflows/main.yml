@@ -25,10 +25,10 @@ jobs:
     # Runs a single command using the runners shell
     - name: init hexo & build
       run: | 
-        # sudo npm install hexo-cli -g 
-        # npm install
-        # npm run clean
-        # npm run build
+        sudo npm install hexo-cli -g 
+        npm install
+        npm run clean
+        npm run build
         ls 
 
     # Runs a set of commands using the runners shell
