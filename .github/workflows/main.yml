@@ -26,9 +26,9 @@ jobs:
     - name: init hexo & build
       run: | 
         sudo npm install hexo-cli -g 
-        npm install
-        npm run clean
-        npm run build
+        sudo npm install
+        sudo npm run clean
+        sudo npm run build
         cd public
         ll
         cat index.html
