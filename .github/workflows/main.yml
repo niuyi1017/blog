@@ -29,9 +29,8 @@ jobs:
         sudo npm install
         sudo npm run clean
         sudo npm run build
-        cd public
-        ll
-        cat index.html
+        
+        cat  public/index.html
 
     # Runs a set of commands using the runners shell
     - name: deploy to aliyun oss
