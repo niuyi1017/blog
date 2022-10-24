@@ -26,14 +26,9 @@ jobs:
     - name: init hexo & build
       run: | 
         sudo npm install hexo-cli -g 
-        ls
-        sudo npm install
-        ls
-        sudo npm run clean
-        ls
-        sudo npm run build
-        ls
-        cat  public/index.html
+        npm install
+        npm run clean
+        npm run build
 
     # Runs a set of commands using the runners shell
     - name: deploy to aliyun oss
