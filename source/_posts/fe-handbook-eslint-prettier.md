@@ -212,7 +212,13 @@ ESLint 附带有[大量的规则](https://eslint.bootcss.com/docs/rules/)。可�
 
 
 
-
+### Prettier 的官方工具
+- [prettier-eslint](https://github.com/prettier/prettier-eslint)  
+> Formats your JavaScript using prettier followed by eslint --fix
+- [eslint-plugin-prettier](https://github.com/prettier/prettier-eslint)  
+> Runs Prettier as an ESLint rule and reports differences as individual ESLint issues.
+- [eslint-config-prettier](https://github.com/prettier/prettier-eslint)  
+> Turns off all rules that are unnecessary or might conflict with Prettier.
 
 
 
