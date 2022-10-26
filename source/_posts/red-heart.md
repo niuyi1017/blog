@@ -8,7 +8,7 @@ tags: Bilibili
 
 <!--more--> 
 
-### 视频
+### 一、视频
 
 全网搜索：我叫牛一  
 
@@ -17,8 +17,14 @@ tags: Bilibili
  抖音：[4分钟50行代码实现一个跳动的红心](https://v.douyin.com/FassH4w/)  
 
  
-### 源码
-#### 1、普通版
+### 二、源码使用方法  
+- 创建一个记事本文件，将下面的源码复制到这个记事本文件里，保存
+- 将这个记事本文件的后缀名改为 `.html`
+- 双击这个记事本文件，即可看到效果
+
+> 如果你是计算机相关专业的学生，希望你能跟着敲一遍，并尽可能弄明白里面用到的知识点。
+### 三、源码
+#### 1、普通版（视频配套）
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -128,6 +134,7 @@ tags: Bilibili
     <h1>我们已经相恋<span id="days"></span>天了</h1>
     <script>
       window.onload = () => {
+        // 更改下面这一行中的“2017-05-20”为你们相爱的那一天
         const firstDay = new Date('2017-05-20').getTime()
         const now = new Date().getTime()
         const days = (now - firstDay) / (1000 * 60 * 60 * 24)
