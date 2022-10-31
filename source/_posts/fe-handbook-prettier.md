@@ -35,7 +35,7 @@ const msg = "hello world";
 
 上面代码格式和 Prettier 要求的格式不一致，要想自动修正代码格式，有两种方法：  
 
-* 方法一：VS Code  Prettier 插件
+* 方法一：VS Code Prettier 插件
 安装完Prettier插件，在代码编辑区右键选择`使用...格式化文档`选择 Prettier ，执行后，代码将会自动格式化为符合规范的代码
 * 方法二：命令行执行 Prettier 命令
 在package.json 的 scripts 字段里添加一行脚本

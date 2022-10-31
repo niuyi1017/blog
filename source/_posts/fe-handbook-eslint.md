@@ -16,7 +16,7 @@ npm init
 ```
 * 安装 ESLint 包
 ```bash
-npm intall eslint 
+npm install eslint -D
 ```
 * 创建 index.js, 编写测试代码。代码中使用`双引号`和`分号`
 ```javascript
@@ -82,7 +82,7 @@ npm run lint
 ### 1、通过 `eslint --init` 初始化 ESLint 到前端项目 
 
 ```bash
-npm eslint --init
+npm init @eslint/config
 ``` 
 
 根据提示，可进行个性化定制 ESLint 的初始功能，比如选择将 ESLint 只用来检查代码语法还是语法和风格、是否应用于 typescript 、是否选用流行代码规范还是根据问题自己定义规范。执行完后，会有根据刚才的选择安装对应的 ESLint 插件包和生成对应的配置文件。  
@@ -277,7 +277,7 @@ ESLint 附带有[大量的规则](https://eslint.bootcss.com/docs/rules/)。可�
 [2] [【译】 antfu 博客：为什么我不用 Prettier](https://juejin.cn/post/7149564942633402382#heading-0)  
 [3] [eslint 的基础使用](https://segmentfault.com/a/1190000011451121)  
 [4] [ESLint 的使用和.eslintrc.js配置](http://t.zoukankan.com/Gbeniot-p-10075043.html)  
-[5] [ESLint 中文文档](https://eslint.bootcss.com/docs/user-guide/configuring)
+[5] [ESLint 中文文档](https://eslint.bootcss.com/docs/user-guide/configuring)  
 [6] [ESLint 官网](https://eslint.org/)
 
 
