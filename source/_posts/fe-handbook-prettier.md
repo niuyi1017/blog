@@ -7,7 +7,6 @@ tags: [前端工作手册, 团队协作及开发规范, 代码风格统一]
 Prettier将自己介绍描述为“一个固执己见的代码格式化工具( Prettier is an opinionated code formatter)”。它可以将代码格式化为风格规范的代码，支持很多编程语言，可以在编辑器保存时运行，在提交前的钩子中运行，或者在CI环境中运行，以确保代码库具有一致的风格。
 
 <!--more-->  
-
 ### 1、安装与配置
 * 初始化一个新项目
 创建一个新文件夹，执行下面命令，然后一路回车
@@ -16,13 +15,13 @@ npm init
 ```
 * 安装 Prettier 包
 ```bash
-npm intall prettier 
+npm intall prettier -D
 ```
-* 创建index.js, 编写测试代码。代码中使用双引号和分号
+* 创建index.js, 编写测试代码。代码中使用`双引号`和`分号`
 ```javascript
 const msg = "hello world";
 ```
-* 在项目根目录创建`.prettierrc.json`，输入以下配置,来要求代码风格为单引号和不允许分号
+* 在项目根目录创建`.prettierrc.json`，输入以下配置,来要求代码风格为`单引号`和`不允许分号`
 ```json
 {
   "singleQuote": true,
@@ -93,9 +92,6 @@ Prettier 配置文件比较简单直接写[配置规则]()就行
 build
 coverage
 ```
-
-
-
 
 ### References  
 
