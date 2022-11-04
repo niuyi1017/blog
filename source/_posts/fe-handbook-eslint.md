@@ -79,7 +79,7 @@ npm run lint
 
 ## 二、ESLint 进阶使用
 经过上面的步骤，我们已经体验到了使用 ESLint 进行代码风格检查和修复代码风格。要想使用 ESLint 来应对更复杂的场景就需要一种更优雅的方式来引入ESLint
-### 1、通过 `eslint --init` 初始化 ESLint 到前端项目 
+### 1、通过 `npm init @eslint/config` 初始化 ESLint 到前端项目 
 
 ```bash
 npm init @eslint/config
