@@ -78,7 +78,7 @@ const msg = "hello world"
 ## 四、 解决 ESLint 与 Prettier 的规则冲突
 
 如果 Prettier 的代码格式化规则与 ESLint 的代码检查规范不一致，就会造成冲突。  
-比如上述示例中，我们把`.prettierrc.json`文件，让 Prettier 在格式化代码时使用双引号：
+比如上述示例中，我们修改一下`.prettierrc.json`文件，让 Prettier 在格式化代码时使用双引号：
 
 ```json
 {
@@ -181,11 +181,11 @@ npm install --save-dev eslint-plugin-prettier
 ### References
 
 [1] [prettier 官方文档](https://prettier.io/docs/en/index.html)  
-[1] [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)  
-[1] [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)  
-[1] [搞懂 ESLint 和 Prettier](https://zhuanlan.zhihu.com/p/80574300)  
-[1] [前端代码规范工具 eslint vs prettier 哪个更适合你](https://baijiahao.baidu.com/s?id=1718226261291810346&wfr=spider&for=pc)  
-[2] [【译】antfu 博客：为什么我不用 Prettier](https://juejin.cn/post/7149564942633402382#heading-0)  
-[3] [eslint 的基础使用](https://segmentfault.com/a/1190000011451121)  
-[4] [ESLint 的使用和.eslintrc.js 配置](http://t.zoukankan.com/Gbeniot-p-10075043.html)  
-[5] [ESLint 可组装的 JavaScript 和 JSX 检查工具 官网文档](https://eslint.bootcss.com/docs/user-guide/configuring)
+[2] [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)  
+[3] [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)  
+[4] [搞懂 ESLint 和 Prettier](https://zhuanlan.zhihu.com/p/80574300)  
+[5] [前端代码规范工具 eslint vs prettier 哪个更适合你](https://baijiahao.baidu.com/s?id=1718226261291810346&wfr=spider&for=pc)  
+[6] [【译】antfu 博客：为什么我不用 Prettier](https://juejin.cn/post/7149564942633402382#heading-0)  
+[7] [eslint 的基础使用](https://segmentfault.com/a/1190000011451121)  
+[8] [ESLint 的使用和.eslintrc.js 配置](http://t.zoukankan.com/Gbeniot-p-10075043.html)  
+[9] [ESLint 可组装的 JavaScript 和 JSX 检查工具 官网文档](https://eslint.bootcss.com/docs/user-guide/configuring)
