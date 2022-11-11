@@ -145,7 +145,7 @@ npm install --save-dev eslint-plugin-prettier
 将上面两个步骤合在一起就是下面的配置，也是官方的推荐配置。
 
 ```JavaScript
-// .eslintrc
+// .eslintrc.js
 {
   "extends": ["plugin:prettier/recommended"]
 }
@@ -172,9 +172,26 @@ npm install --save-dev eslint-plugin-prettier
 
 然后在代码编辑区空白处右键选择`使用...格式化文档`选择 `ESLint`，默认格式化程序也设置为`ESLint`，因为 Prettier 已经做为 ESLint 的插件来运行了
 
-至此,代码规范经典方案已经配置完毕：Prettier 用来修正代码格式， ESLint 用来检查语法错误。  
-如果要调整代码格式的规范，去修改`.prettierrc.json` 文件；  
-如果要调整语法层面的规范，去修改 `.eslintrc.js` 文件
+至此,代码规范经典方案已经配置完毕：Prettier 用来修正代码格式， ESLint 用来检查语法错误。
+
+这样，如果要调整代码规范，只需要修改 `.eslintrc.js` 文件就可以了
+
+```js
+// .eslintrc.js
+{
+  "extends": ["plugin:prettier/recommended"]
+   "rules": {
+    "prettier/prettier": [    // 配置 Prettier 的规则
+      "error",
+      {
+        singleQuote: false,
+      },
+    ],
+    ...   // 配置其他的 ESLint 规则
+  },
+}
+
+```
 
 ## 五、拆解 Vue 官方项目的代码格式化规范相关配置
 
