@@ -176,6 +176,8 @@ npm install --save-dev eslint-plugin-prettier
 
 这样，如果要调整代码规范，只需要修改 `.eslintrc.js` 文件就可以了
 
+![测试图片](http://blog.niuy.xyz/post-imgs/fe-handbook-eslint-prettier/vscode-eslint.png)
+
 ```js
 // .eslintrc.js
 {
@@ -193,9 +195,16 @@ npm install --save-dev eslint-plugin-prettier
 
 ```
 
-## 五、拆解 Vue 官方项目的代码格式化规范相关配置
+## 五、代码规范在 Vue 项目中的应用
 
-### References
+在前端开发中，需要规范的不仅仅是 JavaScript 代码，还有 HTML、CSS ，以及 Vue、JSX、TS 等。
+下面以 Vue 项目为例，如何来规范 .vue 文件和 它里面的模板部分和样式部分
+
+### 1、使用 官方脚手架生成 Vue 模板项目
+
+### 2、拆解官方模版项目的代码规范配置
+
+## References
 
 [1] [prettier 官方文档](https://prettier.io/docs/en/index.html)  
 [2] [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)  
