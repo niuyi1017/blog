@@ -4,8 +4,8 @@ menu:
   Archives: /archives
   Gallery: /gallery
   About: /about
+  Tag: /tags
 rss: /atom.xml
-
 
 # Miscellaneous
 favicon: /favicon.ico
@@ -23,12 +23,12 @@ excerpt_link: Read More...
 
 # MIIT ICP/IP/DOMAIN
 beian:
-  enable: false
-  number: 
+  enable: true
+  number: 鲁ICP备2021004995号-1
   url: https://beian.miit.gov.cn/
 
 # Tags
-show_count: false
+show_count: true
 
 # Toc
 toc: true
@@ -41,21 +41,21 @@ show_copy_btn: true
 
 # Gitalk
 gitalk:
-  enable: false # true
-  clientID: # GitHub Application Client ID
-  clientSecret: # Client Secret
-  repo: # Repository name
-  owner: # GitHub ID
-  admin: # GitHub ID
+  enable: true # true
+  clientID: 7f7ce31516ded730be17 # GitHub Application Client ID
+  clientSecret: 90b34057e4efaa58489586c7a99e6b05c62c6a5a # Client Secret
+  repo: blog # Repository name
+  owner: niuyi1017 # GitHub ID
+  admin: niuyi1017 # GitHub ID
 
 # Valine
 valine:
   enable: false # true
-  el: 'vcomments'
+  el: "vcomments"
   appId:
   appKey:
   notify: false
   verify: true
-  avatar: 'mp'
-  pageSize: '10'
-  placeholder: '请输入...'
+  avatar: "mp"
+  pageSize: "10"
+  placeholder: "请输入..."
